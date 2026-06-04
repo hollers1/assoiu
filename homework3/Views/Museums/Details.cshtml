@@ -1,0 +1,13 @@
+@model homework3.Models.Museum
+@{ ViewData["Title"] = "Детали музея"; }
+<h1>Детали музея</h1>
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">Название</dt>
+        <dd class="col-sm-10">@Model.MuseumName</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.MuseumId" class="btn btn-primary">Изменить</a>
+    <a asp-action="Index" class="btn btn-secondary">К списку</a>
+</div>

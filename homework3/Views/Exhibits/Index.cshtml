@@ -1,0 +1,30 @@
+@model IEnumerable<homework3.Models.Exhibit>
+@{ ViewData["Title"] = "Экспонаты"; }
+<h1>Экспонаты</h1>
+<p><a asp-action="Create" class="btn btn-primary">Добавить новый</a></p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Год</th>
+            <th>Стоимость (тыс. руб.)</th>
+            <th>Музей</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.ExhibitName</td>
+            <td>@item.ExhibitYear</td>
+            <td>@item.ValueK</td>
+            <td>@(item.Museum?.MuseumName ?? "—")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ExhibitId" class="btn btn-sm btn-outline-primary">Изменить</a>
+                <a asp-action="Details" asp-route-id="@item.ExhibitId" class="btn btn-sm btn-outline-info">Детали</a>
+                <a asp-action="Delete" asp-route-id="@item.ExhibitId" class="btn btn-sm btn-outline-danger">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

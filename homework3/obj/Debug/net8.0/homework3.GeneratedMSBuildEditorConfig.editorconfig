@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = homework3
+build_property.RootNamespace = homework3
+build_property.ProjectDir = /home/riqweri/AASOIU/homework3/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/riqweri/AASOIU/homework3
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/riqweri/AASOIU/homework3/Views/Exhibits/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhoaWJpdHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Exhibits/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhoaWJpdHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Exhibits/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhoaWJpdHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Exhibits/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhoaWJpdHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Exhibits/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhoaWJpdHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Museums/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzZXVtcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Museums/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzZXVtcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Museums/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzZXVtcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Museums/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzZXVtcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Museums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTXVzZXVtcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/riqweri/AASOIU/homework3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

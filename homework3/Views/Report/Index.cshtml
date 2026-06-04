@@ -1,0 +1,62 @@
+@model homework3.Models.ViewModels.ReportViewModel
+@{ ViewData["Title"] = "Аналитический отчёт"; }
+
+<h1>Аналитический отчёт по музеям</h1>
+
+<h3 class="mt-4">1. Полный список экспонатов (OrderBy + Include)</h3>
+<table class="table table-bordered table-sm">
+    <thead class="table-light">
+        <tr>
+            <th>Название экспоната</th>
+            <th>Музей</th>
+            <th>Год</th>
+            <th>Стоимость</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model.AllExhibits) {
+            <tr>
+                <td>@e.ExhibitName</td>
+                <td>@(e.Museum?.MuseumName ?? "—")</td>
+                <td>@e.ExhibitYear</td>
+                <td>@e.ValueK</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3 class="mt-5">2. Количество экспонатов по музеям (GroupBy + Count)</h3>
+<table class="table table-bordered table-sm" style="max-width: 500px;">
+    <thead class="table-light">
+        <tr>
+            <th>Музей</th>
+            <th>Количество экспонатов</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model.CountByMuseum) {
+            <tr>
+                <td>@m.MuseumName</td>
+                <td>@m.Count</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3 class="mt-5">3. Средняя оценочная стоимость по музеям (GroupBy + Average)</h3>
+<table class="table table-bordered table-sm" style="max-width: 500px;">
+    <thead class="table-light">
+        <tr>
+            <th>Музей</th>
+            <th>Средняя стоимость (тыс. руб.)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var m in Model.AvgValueByMuseum) {
+            <tr>
+                <td>@m.MuseumName</td>
+                <td>@m.AvgValueK.ToString("F2")</td>
+            </tr>
+        }
+    </tbody>
+</table>

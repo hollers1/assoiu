@@ -1,0 +1,35 @@
+@model homework3.Models.Exhibit
+@{ ViewData["Title"] = "Изменить экспонат"; }
+<h1>Изменить экспонат</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ExhibitId" />
+            <div class="mb-3">
+                <label asp-for="MuseumId" class="control-label"></label>
+                <select asp-for="MuseumId" class="form-control" asp-items="ViewBag.MuseumId"></select>
+                <span asp-validation-for="MuseumId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ExhibitName" class="control-label"></label>
+                <input asp-for="ExhibitName" class="form-control" />
+                <span asp-validation-for="ExhibitName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ExhibitYear" class="control-label"></label>
+                <input asp-for="ExhibitYear" class="form-control" />
+                <span asp-validation-for="ExhibitYear" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ValueK" class="control-label"></label>
+                <input asp-for="ValueK" class="form-control" type="text" />
+                <span asp-validation-for="ValueK" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Сохранить" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</div>

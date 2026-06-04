@@ -1,0 +1,19 @@
+@model homework3.Models.Exhibit
+@{ ViewData["Title"] = "Детали экспоната"; }
+<h1>Детали экспоната</h1>
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Название</dt>
+        <dd class="col-sm-9">@Model.ExhibitName</dd>
+        <dt class="col-sm-3">Год</dt>
+        <dd class="col-sm-9">@Model.ExhibitYear</dd>
+        <dt class="col-sm-3">Стоимость</dt>
+        <dd class="col-sm-9">@Model.ValueK</dd>
+        <dt class="col-sm-3">Музей</dt>
+        <dd class="col-sm-9">@(Model.Museum?.MuseumName ?? "—")</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ExhibitId" class="btn btn-primary">Изменить</a>
+    <a asp-action="Index" class="btn btn-secondary">К списку</a>
+</div>

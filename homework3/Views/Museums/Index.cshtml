@@ -1,0 +1,24 @@
+@model IEnumerable<homework3.Models.Museum>
+@{ ViewData["Title"] = "Музеи"; }
+<h1>Музеи</h1>
+<p><a asp-action="Create" class="btn btn-primary">Добавить новый</a></p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Название музея</th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.MuseumName</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MuseumId" class="btn btn-sm btn-outline-primary">Изменить</a>
+                <a asp-action="Details" asp-route-id="@item.MuseumId" class="btn btn-sm btn-outline-info">Детали</a>
+                <a asp-action="Delete" asp-route-id="@item.MuseumId" class="btn btn-sm btn-outline-danger">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

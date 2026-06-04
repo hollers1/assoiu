@@ -1,0 +1,19 @@
+@model homework3.Models.Museum
+@{ ViewData["Title"] = "Добавить музей"; }
+<h1>Добавить музей</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="MuseumName" class="control-label"></label>
+                <input asp-for="MuseumName" class="form-control" />
+                <span asp-validation-for="MuseumName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Создать" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+</div>

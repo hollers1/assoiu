@@ -1,0 +1,17 @@
+@model homework3.Models.Exhibit
+@{ ViewData["Title"] = "Удалить экспонат"; }
+<h1>Удалить экспонат</h1>
+<h3>Вы уверены, что хотите удалить этот экспонат?</h3>
+<div>
+    <dl class="row">
+        <dt class="col-sm-3">Название</dt>
+        <dd class="col-sm-9">@Model.ExhibitName</dd>
+        <dt class="col-sm-3">Музей</dt>
+        <dd class="col-sm-9">@(Model.Museum?.MuseumName ?? "—")</dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ExhibitId" />
+        <input type="submit" value="Удалить" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Отмена</a>
+    </form>
+</div>
